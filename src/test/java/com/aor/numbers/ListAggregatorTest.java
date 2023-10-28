@@ -3,6 +3,7 @@ package com.aor.numbers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -43,20 +44,13 @@ public class ListAggregatorTest {
 
     @Test
     public void distinct() {
-        class FakeDeduplicator implements GenericListDeduplicator {
-            @Override
-            public List<Integer> deduplicate(List<Integer> list,GenericListSorter listSorter) {
-                return Arrays.asList(1,2,4,5);
-            }
-        }
 
-        class FakeSorter implements GenericListSorter {
-            @Override
-            public List<Integer> sort(List<java.lang.Integer> list) {return Arrays.asList(1, 2, 4, 5);}
-        }
         ListAggregator aggregator = new ListAggregator();
-        GenericListDeduplicator deduplicator = new FakeDeduplicator();
-        GenericListSorter listSorted = new FakeSorter();
+        GenericListSorter listSorted = Mockito.mock(GenericListSorter.class);
+        GenericListDeduplicator deduplicator = Mockito.mock(GenericListDeduplicator.class);
+        Mockito.when(listSorted.sort(list)).thenReturn(Arrays.asList(1,2,2,4,5));
+        Mockito.when(deduplicator.deduplicate(list,listSorted)).thenReturn(Arrays.asList(1,2,4,5));
+
         int distinct = aggregator.distinct(list,deduplicator,listSorted);
 
         Assertions.assertEquals(4, distinct);
@@ -71,21 +65,14 @@ public class ListAggregatorTest {
     }
     @Test
     public void distinct_bug_8726() {
-        class FakeDeduplicator implements GenericListDeduplicator {
-            @Override
-            public List<Integer> deduplicate(List<Integer> list,GenericListSorter listSorter) {
-                return Arrays.asList(1, 2, 4);
-            }
-        }
-
-        class FakeSorter implements GenericListSorter {
-            @Override
-            public List<Integer> sort(List<java.lang.Integer> list) {return Arrays.asList(1, 2, 2, 4);}
-        }
         list = Arrays.asList(1,2,4,2);
         ListAggregator aggregator = new ListAggregator();
-        GenericListDeduplicator deduplicator = new FakeDeduplicator();
-        GenericListSorter listSorted = new FakeSorter();
+        GenericListSorter listSorted = Mockito.mock(GenericListSorter.class);
+        GenericListDeduplicator deduplicator = Mockito.mock(GenericListDeduplicator.class);
+
+        Mockito.when(listSorted.sort(list)).thenReturn(Arrays.asList(1,2,2,4));
+        Mockito.when(deduplicator.deduplicate(list,listSorted)).thenReturn(Arrays.asList(1,2,4));
+
         int distinct = aggregator.distinct(list,deduplicator,listSorted);
 
         Assertions.assertEquals(3, distinct);

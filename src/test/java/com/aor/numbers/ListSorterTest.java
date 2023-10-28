@@ -20,7 +20,7 @@ public class ListSorterTest {
     }
 
     @Test
-    public void sort_1242(){
+    public void bug_sort_8276() {
         ListSorter sorter = new ListSorter();
         List<Integer> list = Arrays.asList(1,2,4,2);
         List<Integer> expected = Arrays.asList(1,2,2,4);
