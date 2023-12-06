@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b4bd078-76c5-4c61-96c2-125426934cde" name="Changes" comment="Ponto 7" />
+    <list default="true" id="8b4bd078-76c5-4c61-96c2-125426934cde" name="Changes" comment="Ponto 7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/DivisibleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/GenericListFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/PositiveFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/DivisibleFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListFiltererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/PositiveFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,7 +85,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -224,6 +236,14 @@
       <workItem from="1698437600014" duration="376000" />
       <workItem from="1698438012433" duration="1710000" />
       <workItem from="1698439764661" duration="7523000" />
+      <workItem from="1698602713916" duration="620000" />
+      <workItem from="1698666598441" duration="806000" />
+      <workItem from="1698850790232" duration="15000" />
+      <workItem from="1698877856229" duration="139000" />
+      <workItem from="1699095065512" duration="8000" />
+      <workItem from="1701880310909" duration="2520000" />
+      <workItem from="1701885253492" duration="2556000" />
+      <workItem from="1701887822421" duration="1264000" />
     </task>
     <task id="LOCAL-00001" summary="Ponto 5">
       <option name="closed" value="true" />
@@ -249,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698455994039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ponto 7">
+      <option name="closed" value="true" />
+      <created>1698602732370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698602732370</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
