@@ -19,7 +19,7 @@ public class PositiveFilterTest {
         }
 
         for (int i : nonPositives){
-            Assertions.assertTrue(filter.accept(i));
+            Assertions.assertFalse(filter.accept(i));
         }
     }
 }

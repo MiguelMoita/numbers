@@ -19,7 +19,7 @@ public class DivisibleFilterTest {
         }
 
         for(int i : nonDivisible){
-            Assertions.assertTrue(filter2.accept(i));
+            Assertions.assertFalse(filter2.accept(i));
         }
     }
 
@@ -34,7 +34,7 @@ public class DivisibleFilterTest {
         }
 
         for(int i : nonDivisible){
-            Assertions.assertTrue(filter3.accept(i));
+            Assertions.assertFalse(filter3.accept(i));
         }
     }
 }

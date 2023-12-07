@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b4bd078-76c5-4c61-96c2-125426934cde" name="Changes" comment="Ponto 7">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/DivisibleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/GenericListFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/PositiveFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/DivisibleFilterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/ListFiltererTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/aor/numbers/PositiveFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+    <list default="true" id="8b4bd078-76c5-4c61-96c2-125426934cde" name="Changes" comment="Ponto 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListDeduplicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListDeduplicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aor/numbers/ListFilterer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +237,8 @@
       <workItem from="1699095065512" duration="8000" />
       <workItem from="1701880310909" duration="2520000" />
       <workItem from="1701885253492" duration="2556000" />
-      <workItem from="1701887822421" duration="1264000" />
+      <workItem from="1701887822421" duration="1488000" />
+      <workItem from="1701946397571" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="Ponto 5">
       <option name="closed" value="true" />
@@ -277,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698602732370</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ponto 8">
+      <option name="closed" value="true" />
+      <created>1701890046211</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701890046211</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +290,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ponto 5" />
     <MESSAGE value="Ponto 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ponto 7" />
+    <MESSAGE value="Ponto 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ponto 8" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/numbers$Tests_in__numbers_test_.ic" NAME="Tests in 'numbers.test' Coverage Results" MODIFIED="1698455869603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

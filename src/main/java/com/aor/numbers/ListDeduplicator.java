@@ -26,7 +26,6 @@ public class ListDeduplicator implements GenericListDeduplicator{
                 last = number;
                 unique.add(number);
             }
-
         return unique;
     }
 }

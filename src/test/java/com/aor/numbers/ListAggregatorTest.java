@@ -46,10 +46,8 @@ public class ListAggregatorTest {
     public void distinct() {
 
         ListAggregator aggregator = new ListAggregator();
-        GenericListSorter listSorted = Mockito.mock(GenericListSorter.class);
-        GenericListDeduplicator deduplicator = Mockito.mock(GenericListDeduplicator.class);
-        Mockito.when(listSorted.sort(list)).thenReturn(Arrays.asList(1,2,2,4,5));
-        Mockito.when(deduplicator.deduplicate(list,listSorted)).thenReturn(Arrays.asList(1,2,4,5));
+        ListSorter listSorted = new ListSorter();
+        ListDeduplicator deduplicator = new ListDeduplicator();
 
         int distinct = aggregator.distinct(list,deduplicator,listSorted);
 

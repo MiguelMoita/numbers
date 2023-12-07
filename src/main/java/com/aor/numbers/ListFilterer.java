@@ -3,7 +3,7 @@ package com.aor.numbers;
 import java.util.ArrayList;
 import java.util.List;
 public class ListFilterer {
-    private GenericListFilter filter;
+    private final GenericListFilter filter;
     public ListFilterer(GenericListFilter filter) {
         this.filter = filter;
 
